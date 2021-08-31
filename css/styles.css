@@ -1,0 +1,657 @@
+html,
+body {
+  font-family: "CircularStd-Book";
+  font-weight: 400;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #6054a4;
+}
+
+@font-face {
+  font-family: "CircularStd-Book";
+  src: local(fonts), url("../fonts/CircularStd-Book.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Sunrise-International";
+  src: local(fonts), url("../fonts/Sunrise-International.otf");
+  font-weight: 400;
+}
+.section {
+  background-color: #53407f;
+}
+
+.wave {
+  background: url("../images/wave.svg") repeat-x;
+  position: absolute;
+  bottom: 0px;
+  width: 7680px;
+  height: 127px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.wave-blue {
+  background: url("../images/wave-blue.svg") repeat-x;
+  position: relative;
+  bottom: 125px;
+  width: 7680px;
+  height: 127px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.wave-purple {
+  background: url("../images/wave-purple.svg") repeat-x;
+  position: relative;
+  bottom: 125px;
+  width: 7680px;
+  height: 127px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.wave-ciano {
+  background: url("../images/wave-ciano.svg") repeat-x;
+  position: relative;
+  bottom: 125px;
+  width: 7680px;
+  height: 127px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.wave-white {
+  background: url("../images/wave-white.svg") repeat-x;
+  position: relative;
+  bottom: 125px;
+  width: 7680px;
+  height: 127px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.circle-pink {
+  position: relative;
+  /* height: 100vh; */
+  width: 30%;
+  /* adicionando imagem de fundo */
+  background: url("../images/circle.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .wave {
+    height: 120px;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1920px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1920px;
+  }
+}
+
+@-webkit-keyframes swell {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+.tropzz {
+  -webkit-text-stroke-width: 3px;
+  color: rgba(255, 0, 0, 0);
+  -webkit-text-stroke-color: #ffec2c;
+}
+.chama {
+  padding-left: 15%;
+}
+.color-none {
+  font-weight: 600;
+}
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+.name-tropzz {
+  bottom: 71px;
+}
+.chama-no {
+  -webkit-text-stroke-width: 2px;
+  color: #6054a4;
+  -webkit-text-stroke-color: #ffff;
+}
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+.section-9 {
+  background-color: #6054a4;
+}
+.contatinho {
+  bottom: 100px;
+}
+.marquee h3 {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.container-image {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* adicionando imagem de fundo */
+  background: url("../images/paloma.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: contain;
+  background-size: cover;
+  background-position: center;
+}
+.container-image-header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* adicionando imagem de fundo */
+  background: url("../images/cabecalho.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: contain;
+  background-size: cover;
+  background-position: center;
+}
+.container-image-title {
+  height: 70vh;
+  width: 100%;
+  /* adicionando imagem de fundo */
+  background: url("../images/titulo.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center;
+}
+.content-ilha {
+  height: 70vh;
+  width: 100%;
+  /* adicionando imagem de fundo */
+  background: url("../images/ilha-meninas.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center;
+}
+.section-2 {
+  background-color: #50b4fc;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.bol {
+  color: #c0247c;
+  background-color: #c0247c;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.section {
+  height: 70vh !important;
+}
+
+h5 {
+  font-size: 65px;
+}
+h6 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 130px;
+}
+h1 {
+  font-size: 180px;
+}
+h3 {
+  font-size: 110px;
+}
+.section-6 {
+  background-color: #ffff;
+}
+.text-section-2 {
+  font-weight: 600;
+  line-height: 90px;
+  color: white;
+}
+.title-yellow {
+  color: #ffec2c;
+  font-weight: 600;
+}
+.date-week {
+  color: #50b4fc;
+  letter-spacing: 25px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+.date {
+  color: #ffec2c;
+  font-weight: 600;
+}
+.promocao {
+  bottom: 240px;
+}
+.font-50 {
+  font-size: 40px;
+}
+.no-bold {
+  color: #ffff;
+}
+.text-inauguration {
+  color: white;
+  font-weight: 600;
+  line-height: 82px;
+  letter-spacing: 7px;
+}
+.section-5 {
+  background-color: #70b4ac;
+}
+.ciano {
+  top: -200px;
+}
+.color-yellow {
+}
+.date-event {
+  background: url("../images/folhagem-background.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  /* margin-right: -35px; */
+  height: auto;
+}
+.mt-6 {
+  margin-top: 6%;
+}
+.more-info {
+  color: white;
+}
+.section-pink {
+  background: url("../images/marca-texto-rosa.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* margin-right: -35px; */
+  height: 54vh;
+  background-color: #50b4fc;
+}
+.text-doe {
+  color: #50b4fc;
+  letter-spacing: 15px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ffec2c;
+}
+.bold {
+  font-weight: 600;
+}
+.section-3 {
+  background-color: #50b4fc;
+}
+.section-4 {
+  background-color: #ffff;
+}
+.text-markdown {
+  font-family: "Sunrise-International";
+  position: relative;
+  top: 10vh;
+  font-size: 9rem;
+}
+.color-purple {
+  color: #6054a4;
+  font-weight: 600;
+}
+.color-yellow {
+  color: #ffec2c;
+  font-weight: 600;
+}
+.color-pink {
+  color: #c0247c;
+  font-weight: 600;
+}
+.color-white {
+  color: #ffff;
+  font-weight: 600;
+}
+.maps {
+  color: #ffff;
+  font-size: 40px;
+  text-decoration: none;
+}
+.maps:hover {
+  color: #c0247c;
+  text-decoration: none;
+}
+.margin-15 {
+  margin-bottom: 15%;
+}
+.image-loja {
+  bottom: 30%;
+}
+.color-blue {
+  color: #50b4fc;
+  font-weight: 600;
+}
+.shake {
+  padding-top: 15%;
+}
+.section-8 {
+  background-color: #ffff;
+}
+.servicos {
+  -webkit-text-stroke-width: 3px;
+  color: #6054a4;
+  -webkit-text-stroke-color: #ffff;
+}
+.section-7 {
+  background-color: #6054a4;
+}
+
+.paraiso {
+  -webkit-text-stroke-width: 3px;
+  color: #ffff;
+  -webkit-text-stroke-color: #c0247c;
+}
+.yogo {
+  bottom: 70px;
+}
+.explicacao {
+  font-size: 194%;
+}
+.pt-8 {
+  padding-top: 8%;
+}
+.mx-5 {
+}
+.mt-3 {
+  margin-top: 15%;
+}
+.dj {
+  /* letter-spacing: 15px; */
+  -webkit-text-stroke-width: 3px;
+  color: #ffff;
+  -webkit-text-stroke-color: #50b4fc;
+}
+.margin-n {
+  margin-top: -11%;
+}
+.justify-flex-start {
+  justify-content: flex-start;
+}
+.align-flex-end {
+  align-items: flex-end;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.align-self-center {
+  align-self: center;
+}
+.bold {
+  font-weight: 600;
+}
+.pointer {
+  position: relative;
+  /* top: 106px; */
+}
+.acai {
+  font-size: 120px;
+  font-weight: bold;
+  font-family: "CircularStd-Book";
+  color: #53407f;
+  letter-spacing: 5px;
+}
+.img img {
+  width: 100%;
+}
+.img-circle {
+  width: auto;
+}
+.img-circle img {
+  width: 100%;
+}
+.img {
+  width: 50%;
+}
+.circle-pink {
+  background-image: ;
+}
+footer {
+  margin: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .date-event {
+    background-size: cover;
+    background-position: right 0px center;
+  }
+}
+@media screen and (max-width: 570px) {
+  .text-markdown {
+    top: 19vh;
+    font-size: 3rem;
+  }
+
+  .title-yellow {
+    font-size: 70px !important;
+  }
+  h3 {
+    font-size: 50px !important;
+  }
+  h5 {
+    font-size: 30px !important;
+  }
+  .contatinho {
+    bottom: 18px;
+  }
+  .font-50 {
+    font-size: 20px;
+  }
+  .maps {
+    font-size: 20px;
+  }
+  .chama-no {
+    -webkit-text-stroke-width: 1px;
+  }
+  .name-tropzz {
+    bottom: 33px;
+  }
+  .bol {
+    height: 25px;
+    width: 25px;
+  }
+  .text-section-2 {
+    font-size: 30px !important;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .date-week {
+    -webkit-text-stroke-width: 1px;
+
+    padding-left: 28px;
+  }
+  .text-inauguration {
+    line-height: 52px;
+    letter-spacing: 8px;
+  }
+  h2 {
+    font-size: 70px;
+  }
+  .acai {
+    font-size: 40px;
+  }
+  .img-responsive {
+    display: inline !important;
+  }
+  .ciano {
+    top: -50px;
+  }
+  .promocao {
+    bottom: 80px;
+    font-size: 18px !important;
+  }
+  .explicacao {
+    font-size: 18px;
+  }
+  .yogo {
+    bottom: 31px;
+  }
+  .shake h5{
+font-size: 20px !important;
+  }
+  .servicos {
+    -webkit-text-stroke-width: 1px;
+
+}
+.date-mark h5{
+  font-size: 20px !important;
+}
+.insta{
+  width: 30px;
+  height: 30px;
+}
+.day{
+  font-size: 20px !important;
+}
+.pe-sm-1{
+  padding-right: 5px !important;
+}
+}
+/* @media screen and (max-width: 1250px) and (min-width: 980px) {
+  .text-markdown {
+    top: 12vh;
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 780px) {
+  .text-markdown {
+    top: 16vh;
+    font-size: 5rem;
+  }
+  .title-yellow {
+    font-size: 120px;
+  }
+  .img-responsive {
+    display: inline;
+  }
+  h3 {
+    font-size: 80px !important;
+  }
+  h5 {
+    font-size: 40px !important;
+  }
+  .contatinho {
+    bottom: 18px;
+  }
+  .text-section-2 {
+    font-size: 60px;
+    line-height: 20px;
+  }
+} */
+@media screen and (max-width: 780px) {
+}
+@media screen and (max-width: 779px) and (min-width: 570px) {
+  .text-markdown {
+    top: 18vh;
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 80px;
+  }
+  .contatinho {
+    bottom: 23px;
+  }
+  h5 {
+    font-size: 40px !important;
+  }
+  .font-50 {
+    font-size: 20px;
+  }
+  .img-responsive {
+    display: inline;
+  }
+  .title-yellow {
+    font-size: 100px;
+  }
+  .text-section-2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
