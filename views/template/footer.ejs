@@ -1,0 +1,11 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="/js/global.js"></script>
+<% if (typeof files != 'undefined') { %>
+    <% files.forEach((file) => { %>
+        <%- include('scriptTag', {file: file}) %>
+    <% }); %>
+<% } %>
+</body>
+</html>

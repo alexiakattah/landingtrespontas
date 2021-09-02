@@ -1,17 +1,30 @@
 html,
 body {
-  font-family: "CircularStd-Book";
-  font-weight: 400;
-  overflow-x: hidden;
+  font-family: "CircularStd-Black";
+  font-weight: 500;
+  overflow-x: hidden !important;
   font-size: 16px;
   font-weight: 300;
   background-color: #6054a4;
+}
+body {
+  position: relative;
 }
 
 @font-face {
   font-family: "CircularStd-Book";
   src: local(fonts), url("../fonts/CircularStd-Book.otf");
   font-weight: 400;
+}
+@font-face {
+  font-family: "CircularStd-Black";
+  src: local(fonts), url("../fonts/CircularStd-Black.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "CircularStd-Bold";
+  src: local(fonts), url("../fonts/CircularStd-Bold.ttf");
+  font-weight: 500;
 }
 @font-face {
   font-family: "Sunrise-International";
@@ -21,11 +34,14 @@ body {
 .section {
   background-color: #53407f;
 }
+.modal-cupom{
+  background-color: #53407f;
+}
 
 .wave {
-  background: url("../images/wave.svg") repeat-x;
-  position: absolute;
-  bottom: 0px;
+  background: url("/img/wave.svg") repeat-x;
+  position: relative;
+  bottom: 113px;
   width: 7680px;
   height: 127px;
   -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
@@ -34,7 +50,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 .wave-blue {
-  background: url("../images/wave-blue.svg") repeat-x;
+  background: url("/img/wave-blue.svg") repeat-x;
   position: relative;
   bottom: 125px;
   width: 7680px;
@@ -45,7 +61,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 .wave-purple {
-  background: url("../images/wave-purple.svg") repeat-x;
+  background: url("/img/wave-purple.svg") repeat-x;
   position: relative;
   bottom: 125px;
   width: 7680px;
@@ -56,7 +72,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 .wave-ciano {
-  background: url("../images/wave-ciano.svg") repeat-x;
+  background: url("/img/wave-ciano.svg") repeat-x;
   position: relative;
   bottom: 125px;
   width: 7680px;
@@ -67,7 +83,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 .wave-white {
-  background: url("../images/wave-white.svg") repeat-x;
+  background: url("/img/wave-white.svg") repeat-x;
   position: relative;
   bottom: 125px;
   width: 7680px;
@@ -82,7 +98,7 @@ body {
   /* height: 100vh; */
   width: 30%;
   /* adicionando imagem de fundo */
-  background: url("../images/circle.png");
+  background: url("/img/circle.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -175,7 +191,7 @@ body {
   background-color: #6054a4;
 }
 .contatinho {
-  bottom: 100px;
+  bottom: 60px;
 }
 .marquee h3 {
   display: inline-block;
@@ -194,7 +210,7 @@ body {
   height: 100vh;
   width: 100%;
   /* adicionando imagem de fundo */
-  background: url("../images/paloma.jpg");
+  background: url("/img/paloma.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -202,12 +218,16 @@ body {
   background-size: cover;
   background-position: center;
 }
+.image-onda-roxa {
+  position: relative;
+  bottom: 26vh;
+}
 .container-image-header {
   position: relative;
   height: 100vh;
   width: 100%;
   /* adicionando imagem de fundo */
-  background: url("../images/cabecalho.jpg");
+  background: url("/img/cabecalho.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -218,8 +238,10 @@ body {
 .container-image-title {
   height: 70vh;
   width: 100%;
+  position: relative;
+  bottom: 200px;
   /* adicionando imagem de fundo */
-  background: url("../images/titulo.png");
+  background: url("/img/titulo.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -231,7 +253,7 @@ body {
   height: 70vh;
   width: 100%;
   /* adicionando imagem de fundo */
-  background: url("../images/ilha-meninas.png");
+  background: url("/img/ilha-meninas.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -262,20 +284,21 @@ body {
 }
 
 h5 {
-  font-size: 65px;
+  font-size: 45px;
 }
 h6 {
-  font-size: 35px;
+  font-size: 25px;
 }
 h2 {
-  font-size: 130px;
+  font-size: 100px;
 }
 h1 {
-  font-size: 180px;
+  font-size: 120px;
 }
 h3 {
-  font-size: 110px;
+  font-size: 70px;
 }
+
 .section-6 {
   background-color: #ffff;
 }
@@ -288,6 +311,103 @@ h3 {
   color: #ffec2c;
   font-weight: 600;
 }
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+
+  font-weight: 500;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1rem;
+  color: #000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  font-weight: 500;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1rem;
+  cursor: text;
+  top: 20px;
+
+  font-weight: 500;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.5rem;
+
+  font-weight: 500;
+  color: #9b9b9b;
+}
+.btn-primary {
+  color: #fff;
+  background: #53407f;
+
+  border: none;
+}
+.btn-primary:hover {
+  background: #6054a4;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+
+  font-weight: 500;
+  border-image: linear-gradient(to right, #53407f, #53407f);
+  border-image-slice: 1;
+}
+.float {
+  position: fixed;
+  width: 100px;
+  cursor: pointer;
+  height: 100px;
+  text-align: center;
+  bottom: 40px;
+  right: 40px;
+  background: none;
+  /* background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #999; */
+}
+.modal-title {
+  color: #53407f;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+
+  color: #53407f;
+  font-weight: 500;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
 .date-week {
   color: #50b4fc;
   letter-spacing: 25px;
@@ -322,7 +442,7 @@ h3 {
 .color-yellow {
 }
 .date-event {
-  background: url("../images/folhagem-background.png");
+  background: url("/img/folhagem-background.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -339,7 +459,7 @@ h3 {
   color: white;
 }
 .section-pink {
-  background: url("../images/marca-texto-rosa.png");
+  background: url("/img/marca-texto-rosa.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -401,7 +521,7 @@ h3 {
   margin-bottom: 15%;
 }
 .image-loja {
-  bottom: 30%;
+  bottom: 340px;
 }
 .color-blue {
   color: #50b4fc;
@@ -419,7 +539,7 @@ h3 {
   -webkit-text-stroke-color: #ffff;
 }
 .section-7 {
-  background-color: #6054a4;
+  background-color: #583c84;
 }
 
 .paraiso {
@@ -472,7 +592,7 @@ h3 {
 .acai {
   font-size: 120px;
   font-weight: bold;
-  font-family: "CircularStd-Book";
+  font-family: "CircularStd-Black";
   color: #53407f;
   letter-spacing: 5px;
 }
@@ -488,11 +608,12 @@ h3 {
 .img {
   width: 50%;
 }
-.circle-pink {
-  background-image: ;
-}
+
 footer {
   margin: 20px 0 20px 0;
+}
+.bottom {
+  bottom: 200px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -502,13 +623,58 @@ footer {
   }
 }
 @media screen and (max-width: 570px) {
+  .image-onda-roxa {
+    top: -55px;
+  }
+  .dj-gustavo{
+    position: relative;
+    top: -50px;
+  }
+  .servicos {
+    -webkit-text-stroke-width: 1px;
+  }
+  .paraiso {
+    -webkit-text-stroke-width: 1px;
+    font-size: 35px !important;
+  }
+  .text-doe {
+    -webkit-text-stroke-width: 1px;
+    font-size: 45px;
+    letter-spacing: 4px;
+  }
+  .emoji{
+    width: 80% !important;
+  }
+  .contatinho-bb{
+    font-size: 44px !important;
+  }
+  .dj{
+    font-size: 70px;
+    margin-bottom: -20px;
+  }
+  .chama{
+    padding:0px ;
+  }
+  .dj-1{
+    margin-top: 14px !important;
+  }
+  .image.text-sm-left.text-center img{
+    width: 100% !important;
+  }
+  .date.text-md-end.pt-sm-5{
+    font-size: 30px !important;
+  }
+  .bottom {
+    bottom: 90px;
+  }
   .text-markdown {
     top: 19vh;
     font-size: 3rem;
   }
 
   .title-yellow {
-    font-size: 70px !important;
+    font-size: 50px !important;
+    padding-top: 20px;
   }
   h3 {
     font-size: 50px !important;
@@ -531,6 +697,9 @@ footer {
   .name-tropzz {
     bottom: 33px;
   }
+  .image-loja {
+    bottom: 50px;
+  }
   .bol {
     height: 25px;
     width: 25px;
@@ -540,7 +709,7 @@ footer {
     line-height: 30px;
   }
   h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   .date-week {
     -webkit-text-stroke-width: 1px;
@@ -548,7 +717,7 @@ footer {
     padding-left: 28px;
   }
   .text-inauguration {
-    line-height: 52px;
+    line-height: 42px;
     letter-spacing: 8px;
   }
   h2 {
@@ -564,7 +733,7 @@ footer {
     top: -50px;
   }
   .promocao {
-    bottom: 80px;
+    bottom: 0px;
     font-size: 18px !important;
   }
   .explicacao {
@@ -573,26 +742,25 @@ footer {
   .yogo {
     bottom: 31px;
   }
-  .shake h5{
-font-size: 20px !important;
+  .shake h5 {
+    font-size: 20px !important;
   }
   .servicos {
     -webkit-text-stroke-width: 1px;
-
-}
-.date-mark h5{
-  font-size: 20px !important;
-}
-.insta{
-  width: 30px;
-  height: 30px;
-}
-.day{
-  font-size: 20px !important;
-}
-.pe-sm-1{
-  padding-right: 5px !important;
-}
+  }
+  .date-mark h5 {
+    font-size: 20px !important;
+  }
+  .insta {
+    width: 30px;
+    height: 30px;
+  }
+  .day {
+    font-size: 20px !important;
+  }
+  .pe-sm-1 {
+    padding-right: 5px !important;
+  }
 }
 /* @media screen and (max-width: 1250px) and (min-width: 980px) {
   .text-markdown {
@@ -625,6 +793,22 @@ font-size: 20px !important;
     line-height: 20px;
   }
 } */
+.maps {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 780px) {
+  .promocao {
+    bottom: 0px;
+  }
+  .text-markdown {
+    top: 140px;
+    font-size: 90px;
+  }
+  .image-onda-roxa {
+    top: -110px;
+  }
+}
 @media screen and (max-width: 780px) {
 }
 @media screen and (max-width: 779px) and (min-width: 570px) {
@@ -632,11 +816,17 @@ font-size: 20px !important;
     top: 18vh;
     font-size: 4rem;
   }
+  .image-onda-roxa {
+    top: -75px;
+  }
   h3 {
     font-size: 80px;
   }
   .contatinho {
     bottom: 23px;
+  }
+  .image-loja {
+    bottom: 50px;
   }
   h5 {
     font-size: 40px !important;
@@ -653,5 +843,9 @@ font-size: 20px !important;
   .text-section-2 {
     font-size: 40px;
     line-height: 60px;
+  }
+  .promocao {
+    bottom: 0px;
+    font-size: 30px !important;
   }
 }

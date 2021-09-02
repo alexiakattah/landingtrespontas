@@ -1,0 +1,19 @@
+# using the available node version at Google Cloud Function
+image: node:14.15.4
+pipelines:
+  branches:
+    master:
+      - step: 
+          name: Build site
+          script:
+            - npm install
+      - step:
+          name: deploy site
+          script:
+          - pipe: atlassian/google-app-engine-deploy:0.2.1
+            variables: 
+              KEY_FILE: $KEY_FILE
+              PROJECT: 'oqlanding'
+
+
+ 
