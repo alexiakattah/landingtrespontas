@@ -9,6 +9,7 @@ body {
 }
 body {
   position: relative;
+  padding-right: 0px !important;
 }
 
 @font-face {
@@ -674,7 +675,7 @@ footer {
 
   .title-yellow {
     font-size: 50px !important;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   h3 {
     font-size: 50px !important;
