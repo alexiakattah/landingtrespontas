@@ -5,7 +5,7 @@ body {
   overflow-x: hidden !important;
   font-size: 16px;
   font-weight: 300;
-  background-color: #6054a4;
+  background-color: #583c84;
 }
 body {
   position: relative;
@@ -179,7 +179,7 @@ body {
 }
 .chama-no {
   -webkit-text-stroke-width: 2px;
-  color: #6054a4;
+  color: #53407f;
   -webkit-text-stroke-color: #ffff;
 }
 .marquee {
@@ -189,13 +189,21 @@ body {
   animation: marquee 10s linear infinite;
 }
 .section-9 {
-  background-color: #6054a4;
+  background-color: #fff;
 }
 .contatinho {
   bottom: 60px;
 }
+.name-tropzz{
+  padding: 0px;
+}
 .marquee h3 {
   display: inline-block;
+}
+.onda-invertida{
+  position: relative;
+    top: 31px;
+    z-index: 99;
 }
 
 @keyframes marquee {
@@ -211,7 +219,7 @@ body {
   height: 100vh;
   width: 100%;
   /* adicionando imagem de fundo */
-  background: url("/img/paloma.jpg");
+  background: url("/img/cabecalho-img.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -281,7 +289,7 @@ body {
   margin-right: 20px;
 }
 .section {
-  height: 70vh !important;
+  height: auto !important;
 }
 
 h5 {
@@ -402,6 +410,12 @@ h3 {
   color: #53407f;
   font-weight: 500;
 }
+h4{
+  font-size: 44px;
+}
+.background-blue{
+  background-color: #50b4fc;
+}
 
 /* reset input */
 .form__field:required,
@@ -415,6 +429,9 @@ h3 {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
 }
+.spacing{
+  letter-spacing: 25px;
+}
 .date {
   color: #ffec2c;
   font-weight: 600;
@@ -425,18 +442,48 @@ h3 {
 .font-50 {
   font-size: 40px;
 }
+.background-white{
+  background-color: #fff;
+}
 .no-bold {
   color: #ffff;
+}
+.encha-pote{
+  top: -25px;
+}
+.backgound-purple {
+  background-color: #583c84;
+}
+.box {
+  box-sizing: border-box;
+  padding: 1rem;
+  /* width: 400px; */
+}
+.imagem {
+  /* width: 80px;
+  height: 80px; */
+  float: right;
+  shape-outside: url('/img/12- ESSE TEXTO INSTITUCIONAL.png');
+  background-size: 80px 80px;
+  padding-left: 15px;
+  padding-right: -15px
 }
 .text-inauguration {
   color: white;
   font-weight: 600;
   line-height: 82px;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 .section-5 {
-  background-color: #70b4ac;
+  background-color: #583c84;
 }
+.backgound-white{
+background-color: #fff;
+}
+.background-purple{
+  background-color: #53407f;
+}
+
 .ciano {
   top: -200px;
 }
@@ -444,6 +491,17 @@ h3 {
 }
 .date-event {
   background: url("/img/folhagem-background.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  /* margin-right: -35px; */
+  height: auto;
+}
+.date-event-invert {
+  background: url("/img/folhagem-background-invert.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -532,7 +590,9 @@ h3 {
   padding-top: 15%;
 }
 .section-8 {
-  background-color: #ffff;
+  background-color: #53407f;
+  position: relative;
+  z-index: 99;
 }
 .servicos {
   -webkit-text-stroke-width: 3px;
@@ -540,7 +600,7 @@ h3 {
   -webkit-text-stroke-color: #ffff;
 }
 .section-7 {
-  background-color: #583c84;
+  background-color: #50b4fc;
 }
 
 .paraiso {
@@ -616,16 +676,33 @@ footer {
 .bottom {
   bottom: 200px;
 }
-
+.insta {
+  width: 50px;
+  /* height: 30px; */
+}
+.momento-tropical{
+  position: relative;
+  top: 97px;
+  z-index: 0;
+}
+.onda-tropical{
+  position: relative;
+  z-index: 999;
+}
 @media screen and (min-width: 1000px) {
   .date-event {
-    background-size: cover;
+    background-size: contain;
     background-position: right 0px center;
   }
 }
 @media screen and (max-width: 570px) {
   .image-onda-roxa {
     top: -55px;
+  }
+  .momento-tropical{
+   
+    top: 37px;
+   
   }
   .dj-gustavo{
     position: relative;
@@ -707,7 +784,7 @@ footer {
   }
   .text-section-2 {
     font-size: 30px !important;
-    line-height: 30px;
+    line-height: 40px;
   }
   h1 {
     font-size: 50px;
@@ -718,8 +795,8 @@ footer {
     padding-left: 28px;
   }
   .text-inauguration {
-    line-height: 42px;
-    letter-spacing: 8px;
+    line-height: 37px;
+    letter-spacing: 6px;
   }
   h2 {
     font-size: 70px;
@@ -754,13 +831,26 @@ footer {
   }
   .insta {
     width: 30px;
-    height: 30px;
+    /* height: 30px; */
   }
   .day {
     font-size: 20px !important;
   }
   .pe-sm-1 {
     padding-right: 5px !important;
+  }
+  .container-image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* adicionando imagem de fundo */
+    background: url("/img/RAFAELA.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
 }
 /* @media screen and (max-width: 1250px) and (min-width: 980px) {

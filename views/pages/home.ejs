@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-8">
   <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '189785289727870');
-  fbq('track', 'PageView');
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+    fbq('init', '189785289727870');
+    fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=189785289727870&ev=PageView&noscript=1"
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display: none"
+      src="https://www.facebook.com/tr?id=189785289727870&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
   <head>
@@ -25,7 +44,6 @@
       integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
       crossorigin="anonymous"
     />
-    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -75,55 +93,66 @@
 
     <div class="col-12">
       <div class="row">
-        <!-- <div class="section">
-          <div class="wave"></div>
-          <div class="container-image-title"></div>
-        </div> -->
+        <div class="section mt-5">
+          <!-- <div class="wave"></div> -->
+          <!-- <div class="container-image-title"></div> -->
+          <div class="image text-center m-auto">
+            <img src="/img/titulo.png" alt="" width="70%" />
+          </div>
+        </div>
 
+        <img src="/img/onda-azul.png" alt="" />
         <div class="section-2 pt-5">
           <!-- <div class="wave-blue"></div> -->
 
-          <div class="col-12 pt-5">
+          <div class="col-12">
             <div class="text-center">
               <!-- <div class="flex">
                 <div class="bol"></div>
                 <div class="bol"></div>
                 <div class="bol"></div>
               </div> -->
+              <div class="image mb-2 text-center">
+                <img
+                  src="/img/2- O PARAISO ESTA DE CARA NOVA ARCOS.png"
+                  alt=""
+                  width="80%"
+                />
+              </div>
 
-              <h5 class="text-section-2 pt-5 mt-5">
-                O paraíso tropical <br />
-                está chegando em
-              </h5>
-              <h1 class="title-yellow">Três Pontas!</h1>
+              <!-- <h3 class="text-section-2 pt-5">O Paraíso Tropical</h3>
+              <h5 class="text-section-2 font-italic">está de cara nova em</h5>
+              <h1 class="title-yellow">Arcos!</h1> -->
               <div class="content-ilha"></div>
-              <div class="date-event col-12 col-sm-12 col-md-12">
-                <div>
-                  <h5 class="date-week">SÁBADO</h5>
-                  <h1 class="date">02/10</h1>
-                  <h5 class="text-inauguration">
-                    UMA INAUGURAÇÃO<br />CHEIA DE ATRAÇÕES
-                  </h5>
+              <div class="">
+                <div class="image mb-3 text-center">
+                  <img src="/img/3- DATA ARCOS .png" alt="" width="80%" />
                 </div>
-                <div class="container mt-6">
+                <!-- <h5 class="color-white spacing">SÁBADO</h5>
+                  <h1 class="date">25/09</h1>
+                  <h4 class="text-inauguration">
+                    UMA INAUGURAÇÃO<br />CHEIA DE ATRAÇÕES!
+                  </h4> -->
+
+                <!-- <div class="container mt-6">
                   <h5 class="more-info">
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/novidadetrespontas/"
+                      href="https://www.instagram.com/tropzzarcos/"
                       class="maps"
                       >saiba mais</a
                     >
                   </h5>
-                </div>
+                </div> -->
               </div>
-              <div class="container">
+              <!-- <div class="container">
                 <h2 class="text-doe pb-5 pt-4">doe e ganhe*</h2>
                 <h3 class="date text-md-end pt-sm-5">seu primeiro tropzz</h3>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="section-3">
+        <!-- <div class="section-3">
           <div class="section-pink">
             <h5 class="text-center more-info text-markdown">
               VAMOS FAZER O BEM JUNTOS?
@@ -135,7 +164,7 @@
               <h3 class="date text-center">
                 1.000 tropzz <br />
                 grátis para <br />
-                Três pontas.
+                Arcos.
               </h3>
             </div>
             <div class="col-12 pb-5 mb-5">
@@ -157,34 +186,35 @@
                   <div class="image">
                     <img src="/img/açai-circulo.png" alt="" width="100%" />
                   </div>
-                  <!-- <h5 class="more-info bold text-center">por um</h5>
-                  <h3 class="acai text-center">açaí</h3> -->
-                  <!-- <div class="img-circle">
-                <img src="/img/circle.png" alt="" />
-              </div> -->
+          
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+        <img class="background-blue" src="/img/onda-branca.png" alt="" />
         <div class="section-4 align-self-center">
+          <div class="image text-center">
+            <img src="/img/imagem-inauguraçao.png" alt="" width="80%" />
+          </div>
           <div class="container bold">
-            <div>
-              <div class="wave-white"></div>
+            <div class="image text-center">
+              <img src="/img/dj-gustavo-pio.png" alt="" width="80%" />
+              <h3 class="color-purple">Dj Gustavo Pio</h3>
             </div>
-            <div class="text-center col-12 col-lg-10 m-lg-auto pb-5">
+            <!-- <div class="text-center col-12 col-lg-10 m-lg-auto pb-5">
               <h5 class="color-purple">
-                Estaremos com estande em <br />
-                supermercados da cidade.
+                Estaremos com estande no <br />
+                supermercado HIPER ABC da Rua São Geraldo.
               </h5>
               <br />
               <h5 class="color-blue">
                 Doe a partir de 1kg de alimento e ganhe 1 voucher para trocar
                 por 1 açaí 300ml + 5 adicionais na semana de inauguração.
-                Consulte programação nas redes sociais @tropzztrespontas.
+                Consulte programação nas redes sociais @tropzzarcos.
               </h5>
               <br />
-              <h5 class="color-purple">Doações destinadas á xxxx</h5>
+              <h5 class="color-purple">Doações destinadas ao Asilo lar e Pousada dos Berto</h5>
             </div>
             <div class="col-12 col-lg-10 m-lg-auto pt-5">
               <div class="d-flex img-responsive">
@@ -197,30 +227,38 @@
                   <img src="/img/dj-gustavo-pio.png" alt="" width="100%" />
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="image date-event pb-5 mb-5">
+          <!-- <div class="image date-event pb-5 mb-5">
             <img src="/img/imagem-inauguraçao.png" alt="" width="60%" />
-          </div>
+          </div> -->
         </div>
-        <div class="section-5">
-          <div class="wave-ciano"></div>
 
-          <div class="container ciano position-relative">
+        <img class="backgound-white" src="/img/onda-roxa.png" alt="" />
+        <div class="section-5">
+          <div class="container">
             <div class="image text-sm-left text-center">
               <img src="/img/promocaoPote.png" alt="" width="80%" />
             </div>
-            <div class="col-12 d-flex">
-              <div class="col-0 p-0 col-lg-8"></div>
+
+            <div class="col-12 align-self-end d-flex justify-content-end">
+              <div class="col-6 position-relative encha-pote">
+                <div class="image">
+                  <img src="/img/texto-encha-o-pote.png" alt="" width="100%" />
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-0 p-0 col-lg-8"></div>
               <div class="col-12 col-lg-4">
                 <h5 class="text-left date position-relative promocao">
-                  no dia 02/10 durante a inauguração da Tropzz Três Pontas,
+                  no dia 25/09 durante a inauguração da Tropzz Arcos,
                   encha o pote de açaí de 300ml com o que quiser dos adicionais
                   da bancada por apenas R$9,99.
                 </h5>
-              </div>
-            </div>
-            <div class="col-12">
+              </div> -->
+
+            <!-- <div class="col-12">
               <div
                 class="image text-center pb-5 mb-5"
                 data-toggle="modal"
@@ -228,16 +266,56 @@
               >
                 <img src="/img/botao-cupom.png" alt="" width="70%" />
               </div>
+            </div> -->
+          </div>
+          <div class="image mb-1">
+            <img src="/img/vamos-o-bem.png" alt="" width="100%" />
+          </div>
+          <div class="row position-relative name-tropzz pt-1 mt-5 mb-2">
+            <div class="wrapper">
+              <div class="marquee">
+                <h3 class="color-none tropzz">doe e ganhe*</h3>
+                <h3 class="color-none tropzz">doe e ganhe*</h3>
+                <h3 class="color-none tropzz">doe e ganhe*</h3>
+                <h3 class="color-none tropzz">doe e ganhe*</h3>
+                <h3 class="color-none tropzz">doe e ganhe*</h3>
+                <h3 class="color-none tropzz">doe e ganhe*</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-2">
+            <div class="image text-center">
+              <img src="/img/mil-tropxx.png" alt="" width="80%" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="image text-center">
+              <img src="/img/1kg.png" alt="" width="80%" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="image text-center date-event-invert">
+              <img src="/img/9- açaí novo pote trocar.png" alt="" width="80%" />
             </div>
           </div>
         </div>
+        <img class="backgound-purple pt-5" src="/img/onda-branca.png" alt="" />
         <div class="section-6">
-          <div>
-            <div class="wave-white"></div>
-          </div>
           <div class="container">
-            <div class="text-center">
-              <h5 class="color-pink">como assim</h5>
+            <!-- <div class="col-10 m-auto">
+
+              <h5 class="color-purple text-justify">
+                Estaremos com estande no HIPER ABC da São Geraldo
+              </h5>
+              <h5 class="color-blue text-justify">
+                Doe a partir de 1kg de alimento e ganhe 1 voucher para trocar por
+                1 açaí de 300ml + 5 adicionais na semana de inauguração. Consulte
+                programação nas redes sociais @tropzzarcos.
+              </h5>
+            </div> -->
+            <div class="image text-center pt-5">
+              <img src="/img/10- TEXTO DOAÇAO ARCOS.png" alt="" width="100%" />
+              <!-- <h5 class="color-pink">como assim</h5>
               <h3 class="color-pink paraiso">Paraíso Tropical??</h3>
               <div class="col-12 mt-3 pt-8">
                 <h6 class="color-purple">Chega aqui que eu vou explicar...</h6>
@@ -271,23 +349,50 @@
                     <img src="/img/yogo.png" alt="" width="60%" />
                   </div>
                 </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="row pt-2 mb-2 pb-2">
+            <div class="wrapper">
+              <div class="marquee">
+                <h3 class="color-none tropzz">tropzz.tropzz.tropzz.</h3>
+                <h3 class="color-none tropzz">tropzz.tropzz.tropzz.</h3>
+                <h3 class="color-none tropzz">tropzz.tropzz.tropzz.</h3>
+                <h3 class="color-none tropzz">tropzz.tropzz.tropzz.</h3>
               </div>
             </div>
           </div>
-
-          <div class="image">
-            <img src="/img/momento-tropical.png" alt="" width="100%" />
+          <div class="image text-center">
+            <img src="/img/11- TITULO INSTUCIONAL.png" alt="" width="80%" />
           </div>
+          <div class="image text-center">
+            <img
+              src="/img/12- ESSE TEXTO INSTITUCIONAL (1).png"
+              alt=""
+              width="90%"
+            />
+          </div>
+
+          <!-- <div class="image">
+            <img src="/img/momento-tropical.png" alt="" width="100%" />
+          </div> -->
         </div>
+        <img class="background-white" src="/img/onda-azul.png" alt="" />
+
         <div class="section-7">
-          <img
-            src="/img/onda-roxa.png"
-            alt=""
-            width="100%"
-            class="image-onda-roxa"
-          />
-          <div class="container position-relative bottom">
-            <div class="folhas col-12 flex">
+          <div class="momento-tropical">
+            <div class="image text-center">
+              <img
+                src="/img/12- FOTOS MOMENTOS TROPICAIS ARCOS.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="image text-center">
+              <img src="/img/13- SEU MOMENTO TROPICAL.png" alt="" width="90%" />
+            </div>
+
+            <!-- <div class="folhas col-12 flex">
               <div class="col-4 shake text-center">
                 <h5 class="color-white">
                   Várias delícias para você e seu clã curtirem muito!
@@ -327,34 +432,69 @@
               <div class="image text-center">
                 <img src="/img/estamos-chegando.png" alt="" width="80%" />
               </div>
-            </div>
+            </div> -->
+          </div>
+          <img
+            class="onda-tropical"
+            src="/img/onda-roxa.png"
+            alt=""
+            width="100%"
+          />
+        </div>
+
+        <div class="section-8">
+          <div class="image text-center">
+            <img
+              src="/img/14- TITULO TROPICALUDADES IRRESISTIVEIS.png"
+              alt=""
+              width="90%"
+            />
+          </div>
+          <div class="image text-center date-event">
+            <img
+              src="/img/15- IMAGEM SHAKE VARIAS DELICIAS.png"
+              alt=""
+              width="90%"
+            />
+          </div>
+          <div class="image text-center">
+            <img src="/img/15- TEXTO PRODUTOS.png" alt="" width="80%" />
+          </div>
+          <div class="image text-center">
+            <img src="/img/17- ENCONTRO MARCADO ARCOS.png" alt="" width="80%" />
+          </div>
+          <div class="image text-center">
+            <img src="/img/estamos-chegando.png" alt="" width="80%" />
           </div>
         </div>
-        <div class="section-8">
-          <div class="wave-white"></div>
-          <div class="image text-center position-relative image-loja">
+        <img class="background-purple" src="/img/onda-branca.png" alt="" />
+
+        <div class="section-9">
+          <div class="image text-center">
             <img src="/img/loja.png" alt="" width="60%" />
           </div>
           <div class="col-12 col-xl-10 text-center m-xl-auto pb-5">
             <h5 class="color-purple">novidades à mil</h5>
             <h3 class="color-pink">no nosso insta!</h3>
             <div class="d-flex text-center justify-content-center">
-              <img
+              <!-- <img
                 src="/img/instagram.png"
                 alt=""
                 width="70"
                 height="70"
                 class="insta"
-              />
-              <h5 class="color-purple">@novidadetrespontas</h5>
+              /> -->
+              <h5 class="color-purple">@tropzztrespontas</h5>
             </div>
           </div>
-        </div>
-        <div class="section-9">
+
           <div class="container-image">
+            <img src="/img/onda-branca-invertida.png" alt="" width="100%" />
             <!-- <div class="wave-white"></div> -->
           </div>
-          <div class="row position-relative name-tropzz mb-5 pb-5">
+        </div>
+        <div class="section-10">
+          <div class="row position-relative name-tropzz mb-2 pb-2">
             <div class="wrapper">
               <div class="marquee">
                 <h3 class="color-none tropzz">tropzz.tropzz.tropzz.</h3>
@@ -364,28 +504,35 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container background-purple">
             <div class="col-12 col-xl-10 m-auto pb-5">
               <div class="image text-center">
                 <img src="/img/ilha-meninas.png" alt="" width="70%" />
               </div>
-              <div class="d-flex col-12 align-items-center">
-                <div class="col-7 col-md-6 chama text-right text-sm-end">
+              <div class="d-flex col-12 align-items-center pt-5">
+                <div class="image text-left">
+                  <img
+                    src="/img/20- TITULO CHAMA NO CONTATINHO.png"
+                    alt=""
+                    width="80%"
+                  />
+                </div>
+                <!-- <div class="col-7 col-md-6 chama text-right text-sm-end">
                   <h5 class="chama-no">Chama no</h5>
                 </div>
-                <div class="col-4 col-md-6">
+                <div class="col-5 col-md-6">
                   <img
                     src="/img/emoji-oculos.png"
                     class="emoji"
                     alt=""
                     width="50%"
                   />
-                </div>
+                </div> -->
               </div>
 
-              <div class="col-12 text-center position-relative contatinho">
+              <!-- <div class="col-12 text-center position-relative contatinho">
                 <h3 class="color-white contatinho-bb">contatinho, bb!</h3>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="container">
@@ -395,39 +542,37 @@
               </div>
             </div>
             <div class="col-12 col-xl-10 m-auto d-flex">
-              <div class="col-8">
+              <div class="col-10">
                 <div class="text pb-5 mb-5">
-                  <h5 class="color-white">Aqui em 3 Pontas</h5>
+                  <h6 class="color-white">Aqui em 3 Pontas!</h6>
                   <p class="font-50 no-bold">
-                    Rua Azarias de <br />
-                    Brito Sobrinho, n 15 / em frente a praça Cônego Vitor <br />
+                    R. Azarias de Brito Sobrinho, nº15, em frente à praça Cônego
+                    Victor <br />
                     Três Pontas - MG
                   </p>
                 </div>
               </div>
-              <div class="col-4">
+              <!-- <div class="col-2">
                 <div class="text pb-5">
                   <h5 class="color-white day">seg - sex</h5>
                   <p class="no-bold font-50">10h às 22h</p>
                   <h5 class="color-white day">sáb - dom</h5>
                   <p class="no-bold font-50">10h às 22h</p>
-                </div>
-              </div>
+                </div> 
+              </div> -->
             </div>
             <div class="col-12 col-xl-10 m-auto d-flex">
               <div class="col-8">
                 <div class="d-flex">
-                  <img
-                    src="/img/maps-and-flags.png"
-                    alt=""
-                    width="10%"
-                    height="100%"
-                  />
                   <a
-                    href="https://goo.gl/maps/QCJq8rTAqd5DVb4L7"
+                    href="https://goo.gl/maps/Uzmt4QJdTSGKe8g69"
                     target="_blank"
                     class="maps"
-                    >Abrir no mapa</a
+                    ><img
+                      src="/img/maps-and-flags.png"
+                      alt=""
+                      width="10%"
+                    />Abrir no mapa</a
                   >
                 </div>
               </div>
@@ -445,7 +590,7 @@
                     />
                   </a>
                   <a
-                    href="https://www.facebook.com/novidadeemtrespontas/?ref=pages_you_manage"
+                    href="https://www.facebook.com/novidadeemtrespontas/?ref=pages_you_manage "
                     class="maps"
                     target="_blank"
                   >
@@ -455,7 +600,12 @@
                       class="pe-4 pe-sm-1 insta"
                     />
                   </a>
-                  <a href="#" class="maps" target="_blank">
+                  <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5535999481914&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20inaugura%C3%A7%C3%A3o%20da%20Tropzz%20em%20Três%20Pontas%20%3A)"
+                    class="maps"
+                    target="_blank"
+                  >
                     <img
                       src="/img/whatsapp.png"
                       alt=""
@@ -466,12 +616,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 pt-5 mt-5">
-              <div class="flex">
+            <div class="col-12 pt-5 mt-5 pb-2 mb-5">
+              <!-- <div class="flex">
                 <div class="bol"></div>
                 <div class="bol"></div>
                 <div class="bol"></div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -534,9 +684,6 @@
                 class="btn btn-primary"
                 id="sendSubmit"
                 data-toggle="modal"
-                
-          
-                
                 data-target="#exemploModal"
               >
                 Enviar
@@ -580,24 +727,25 @@
             </div>
             <div class="text-center mb-5 pb-5">
               <h5 class="color-white">
-                basta apresentar o print dessa tela no caiza, tutupon?
+                basta apresentar o print dessa tela no caixa, tutupon?
               </h5>
             </div>
             <div class="image">
               <img src="/img/logo.png" alt="" width="50%" />
             </div>
             <div class="text-center">
-              <h4 class="color-white"> válido até dia 21/10/2021</h4>
+              <h4 class="color-white">válido até dia 15/10/2021</h4>
             </div>
-           
-          
-
           </div>
         </div>
       </div>
     </div>
 
-    <div class="float" data-toggle="modal" data-target="#ExemploModalCentralizado">
+    <div
+      class="float"
+      data-toggle="modal"
+      data-target="#ExemploModalCentralizado"
+    >
       <img src="/img/botao-cupom.png" alt="" width="100%" />
     </div>
 
@@ -622,11 +770,11 @@
 
     <!-- <script src="/js/home.js"></script> -->
     <script>
-      $("form").on("submit", (e) => {
+      $('form').on('submit', (e) => {
         e.preventDefault();
 
-        let name = $("#name").val();
-        let telefone = $("#telefone").val();
+        let name = $('#name').val();
+        let telefone = $('#telefone').val();
 
         const html = `
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -849,16 +997,15 @@ a[x-apple-data-detectors] {
 </html>
   `;
         const data = {
-          from: "LP Três Pontas <noreply@tropzz.com.br>",
+          from: 'LP Três Pontas <noreply@tropzz.com.br>',
           // to: "Tropzz Tres Pontas <noreply@tropzz.com.br>",
-          to: "alexiakattah@gmail.com",
-          subject: "Cadastro de cupom Tropzz tres pontas",
+          to: 'alexiakattah@gmail.com',
+          subject: 'Cadastro de cupom Tropzz tres pontas',
           html,
         };
-        $.post("/send", data, (response) => {
-          console.log("Data:", response);
+        $.post('/send', data, (response) => {
+          console.log('Data:', response);
         });
-      
       });
     </script>
   </body>
